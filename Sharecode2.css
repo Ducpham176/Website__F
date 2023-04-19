@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0 80px;
+    background: #262626;
+    font-family: 'Dosis', sans-serif;
+    overflow-x: hidden;
+}
+#navbar {
+    width: 100%;
+    height: 61px;
+    background: #1b1c31;
+    display: grid !important;
+    grid-template-columns: 1fr 61px;
+    grid-template-rows: 1fr;
+    padding: 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+#navbar::before {
+    content: '';
+    width: 100%;
+    left: -80px;
+    position: absolute;
+    height: 61px;
+    background: #1b1c31;
+    z-index: -1;
+}
+#navbar::after {
+    content: '';
+    width: 100%;
+    left: 80px;
+    position: absolute;
+    height: 61px;
+    background: #1b1c31;
+    z-index: -1;
+}
+.logoWeb {
+    width: 61px;
+    height: 61px;
+    background-image: url(Logo.png);
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+}
+.logoWeb::before {
+    position: absolute;
+    content: 'CYB';
+    width: 61px;
+    height: 31px;
+    color: #ffffff;
+    right: -48px;
+    bottom: 15px;
+    font-size: 30px;
+    font-weight: 600;
+}
+#navbar #listHeader {
+    display: flex;
+    align-items: center;
+    height: 61px;
+    background: transparent;
+    gap: 35px;
+}
+#navbar #listHeader li {
+    font-weight: 600;
+    font-family: p;
+    display: inline-block;
+    color: #fff;
+    width: 100px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+}
+#navbar #listHeader li:hover {
+    color: #e47700;
+}
+#navbar #SearchHd {
+    width: 61px;
+    height: 61px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e2124;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 80px;
+    z-index: 99;
+}
+
+.SearchCard {
+    z-index: 111;
+    width: 300px;
+    height: 61px;
+    background: #1e2124;
+    position: fixed;
+    top: 70px;
+    right: 4.75rem;
+    border-radius: 2px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: 0.3s up linear forwards;
+}
+
+
+@keyframes up {
+    0% {
+        opacity: 0;
+        top: 40px;
+    }
+    50% {
+        top: 70px;
+        opacity: 1;
+    }
+}
+.SearchCard::before {
+    content: '';
+    width: 50px;
+    height: 30px;
+    background: #1e2124;
+    top: -10px;
+    right: 0%;
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.SearchCard input[type=search] {
+    width: 94%;
+    height: 41px;
+    position: absolute;
+    left: 3%;
+    outline: none;
+    background: #393e4255;
+    border: 1px solid #8d8d8dee;
+    border-radius: 2px;
+    padding-left: 10px;
+    padding-right: 55px;
+    color: #ffff;
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 0.6px;
+}
+.btn_ok {
+    position: absolute;
+    width: 44px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e47700;
+    top: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    right: 11px;
+    color: #Ffff;
+    border-radius: 2px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.31);
+}
+.btn_ok:hover {
+    color: #Ffff;
+}
+#navbar #SearchHd:hover {
+    color: #e47700;
+}
+#navbar #listHeader p {
+    pointer-events: none;
+}
+.small_HTML_CSS {
+    display: block;
+    position: absolute;
+    bottom: -21px;
+    background: #00a6ed;
+    color: #fff;
+    bottom: -81.5px;
+    display: none;
+}
+.Meo {
+    width: 140px;
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    transition: 0.3s;
+}
+.Meo:hover {
+    text-transform: uppercase;
+}
+#MeoVat:hover .small_HTML_CSS {
+    display: block;
+} 
+.Meoer {
+    background: #1b1c31;
+    pointer-events: none;
+}
+#Replaye {
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+    outline: none;
+    border: none;
+    background: #00a6ed;
+    bottom: 2%;
+    right: 2%;
+    border-radius: 2px;
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.31);
+    z-index: 3;
+    display: none;
+}
+
+footer .container {
+    width: 100%;
+    height: 210px;
+    background: #1b1c31;
+    display: block;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 40px;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    line-height: 30px;
+    color: #eeee;
+    z-index: 2;
+}
+footer .container::before {
+    content: '';
+    position: absolute;
+    width: 7.5%;
+    left: -80px;
+    bottom: 0px;
+    height: 100%;
+    background: #1b1c31;
+    box-shadow: inset 1px 1px 10px #0c0d17;
+    z-index: 1;
+}
+footer .container::after {
+    content: '';
+    position: absolute;
+    width: 7.5%;
+    right: -80px;
+    bottom: 0px;
+    height: 100%;
+    background: #1b1c31;
+    box-shadow: inset 1px 1px 10px #0c0d17;
+    z-index: 1;
+}
+.containerEnd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    background: #262626;
+    color: #ffffff;
+    padding: 15px;
+}
+.container .left {
+    text-align: justify;
+}
+.container .right {
+    text-align: justify;
+}
+
+.github {
+    width: 36px;
+    height: 36px;
+    background-image: url(gh.webp);
+    background-size: cover;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 50%;
+    background-position: center;
+    border: 1px solid #eeee;
+    cursor: pointer !important;
+    z-index: 12 !important;
+}
+.facebook {
+    width: 36px;
+    height: 36px;
+    background-image: url(fb1.jpg);
+    background-size: cover;
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+    border-radius: 50%;
+    border: 1px solid #eeee;
+}
+.tiktok {
+    width: 36px;
+    height: 36px;
+    background-image: url(ttk.png);
+    background-size: cover;
+    position: absolute;
+    left: 110px;
+    bottom: 10px;
+    border-radius: 50%;
+    z-index: 111 !important;
+    cursor: pointer;
+    border: 1px solid #eeee;
+}
+.overview {
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    top: 91px;
+    display: flex;
+    width: 87.8vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    border: 1px solid #000000;
+    background: #f7f7f7;
+    overflow-y: scroll;
+    padding: 10px;
+}
+.overview::before {
+    content: 'Marvel HTML CSS';
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    background: #e47700;
+    top: -0px;
+    right: 0;
+    color: #ffff;
+    z-index: 1;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.31);
+}
+textarea {
+    width: 100%;
+}

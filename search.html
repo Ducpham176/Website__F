@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Code</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="search.css">
+    <link rel="icon" href="Logo.png">
+</head>
+<body>
+    <!-- TOP -->
+    <header>
+        <nav id="navbar">
+            <ul id="listHeader">
+                <div class="logoWeb"></div>
+                <p>ㅤ</p>
+                <li id="home">HOME</li>
+                <li id="MeoVat">HTML&CSS🔽
+                    <div class="small_HTML_CSS">
+                        <div class="Meoer">ㅤ</div>
+                        <div class="Meo" id="htmlTrick">Mẹo HTML</div>
+                        <div class="Meo" id="cssTrick">Mẹo CSS</div>
+                    </div>
+                </li>
+                <li id="jsCode">JAVASCRIPT</li>
+                <li id="MeoVat">C++🔽
+                    <div class="small_HTML_CSS">
+                        <div class="Meoer">ㅤ</div>
+                        <div class="Meo" id="CsltC">Cở Sở LẬP TRÌNH</div>
+                        <div class="Meo" id="KtltC">Kĩ Thuật LẬP TRÌNH</div>
+                    </div>
+                </li>
+                <li id="MeoVat">GIT CODE🔽
+                    <div class="small_HTML_CSS" style="bottom: -122px;">
+                        <div class="Meoer">ㅤ</div>
+                        <div class="Meo" id="Sharecode">Share CODE</div>
+                        <div class="Meo" id="easyGit">Cơ Bản GIT</div>
+                        <div class="Meo" id="createGit">Tạo Link WEB</div>
+                    </div>
+                </li>
+                <li id="contactMy">LIÊN HỆ</li>
+            </ul>
+            <button id="SearchHd"><i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </nav>
+    </header>
+    
+    <div class="SearchCard">
+        <input type="search" placeholder="Search">
+        <div class="btn_ok">Ok</div>
+    </div>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+    <!-- MAIN -->
+    
+    <div class="overview">
+
+</div>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <!-- FOOTER -->
+    <a href="#" id="Replaye">🔼</a>
+    <footer>
+        <div class="container">
+            <div class="left">- Chào mừng bạn đến với CYB - Cộng đồng chia sẻ kiến thức lập trình! Tại đây, chúng tôi cung cấp các bài viết hữu ích về lập trình, chia sẻ kiến thức, kinh nghiệm, hướng dẫn và các tài liệu hữu ích khác để giúp các lập trình viên cải thiện kỹ năng của mình và phát triển nghề nghiệp. Được thành lập từ năm 2020, chúng tôi luôn cố gắng cung cấp những kiến thức mới nhất và hữu ích nhất cho cộng đồng lập trình viên trên toàn thế giới.</div>
+            <div class="right">- Chúng tôi tin rằng chia sẻ kiến thức là cách tốt nhất để cùng nhau phát triển và tiến bộ trong nghề lập trình. Vì vậy, CYB luôn đề cao giá trị của việc chia sẻ kiến thức, tạo ra một cộng đồng lập trình viên đoàn kết, tương tác và hỗ trợ nhau trong quá trình học tập và làm việc. Chúng tôi khuyến khích mọi người tham gia cộng đồng và chia sẻ kiến thức của mình với những người khác.</div>
+            <a href="https://github.com/Ducpham176" class="github"></a> 
+            <a href="https://www.facebook.com/ducpham.66" class="facebook"></a> 
+            <a href="https://www.tiktok.com/@z.z.z.z.zz.zz" class="tiktok"></a> 
+        </div>
+        <div class="containerEnd">Nếu bạn có bất kỳ câu hỏi, ý kiến đóng góp hoặc muốn chia sẻ kiến thức của mình, hãy liên hệ với chúng tôi qua email:  ㅤ<a href="mailto:ducpham2004nha@gmail.com" style="color: #eeeeee;"> ducpham2004nha@gmail.com</a>.</p></div>
+    </footer>
+    <script src="main.js"></script>
+    <script>
+        document.getElementById('Sharecode').addEventListener('click', () => {
+            window.location.href = 'AllSharecode.html';
+        })
+        window.addEventListener('scroll', () => {
+    if(window.scrollY > 1)
+    {
+        document.getElementById('Replaye').style.display = 'block';
+    }
+    else {
+        document.getElementById('Replaye').style.display = '';
+    }
+})
+document.getElementById('home').addEventListener('click', () => {
+    window.location.href = 'index.html';
+})
+document.getElementById('CsltC').addEventListener('click', () => {
+    window.location.href = 'CsltC.html';
+})
+document.getElementById('KtltC').addEventListener('click', () => {
+    window.location.href = 'KtltC.html';
+});
+document.getElementById('easyGit').addEventListener('click', () => {
+    window.location.href = 'Git.html';
+})
+document.getElementById('contactMy').addEventListener('click', () => {
+    window.location.href = 'contact.html';
+})
+document.getElementById('createGit').addEventListener('click', () => {
+    window.location.href = 'Taolinkweb.html';
+})
+document.getElementById('cssTrick').addEventListener('click', () => {
+    window.location.href ='csshtml.html';
+})
+document.getElementById('htmlTrick').addEventListener('click', () => {
+    window.location.href = 'htmlcss.html';
+})
+document.getElementById('jsCode').addEventListener('click', () => {
+    window.location.href = 'jscode.html';
+})
+
+    </script>
+</body>
+</html>

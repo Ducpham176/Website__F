@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share code</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="KtltC.css">
+    <link rel="icon" href="Logo.png">
+</head>
+<body>
+    <!-- TOP -->
+    <header>
+        <nav id="navbar">
+            <ul id="listHeader">
+                <div class="logoWeb"></div>
+                <p>ㅤ</p>
+                <li id="home">HOME</li>
+                <li id="MeoVat">HTML&CSS🔽
+                    <div class="small_HTML_CSS">
+                        <div class="Meoer">ㅤ</div>
+                        <div class="Meo" id="htmlTrick">Mẹo HTML</div>
+                        <div class="Meo" id="cssTrick">Mẹo CSS</div>
+                    </div>
+                </li>
+                <li id="jsCode">JAVASCRIPT</li>
+                <li id="MeoVat">C++🔽
+                    <div class="small_HTML_CSS">
+                        <div class="Meoer">ㅤ</div>
+                        <div class="Meo" id="CsltC">Cở Sở LẬP TRÌNH</div>
+                        <div class="Meo" id="KtltC">Kĩ Thuật LẬP TRÌNH</div>
+                    </div>
+                </li>
+                <li id="MeoVat">GIT CODE🔽
+                    <div class="small_HTML_CSS" style="bottom: -122px;">
+                        <div class="Meoer">ㅤ</div>
+                        <div class="Meo" id="Sharecode">Share CODE</div>
+                        <div class="Meo" id="easyGit">Cơ Bản GIT</div>
+                        <div class="Meo" id="createGit">Tạo Link WEB</div>
+                    </div>
+                </li>
+                <li id="contactMy">LIÊN HỆ</li>
+            </ul>
+            <button id="SearchHd"><i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </nav>
+    </header>
+    <div class="SearchCard">
+        <input type="search" placeholder="Search">
+        <div class="btn_ok">Ok</div>
+    </div>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+    <!-- MAIN -->
+    
+    <div class="overview">
+        <textarea>
+// <!-- CHƯƠNG TRÌNH C++ QUẢN LÍ SINH VIÊN -->
+            
+                #include <iostream>
+                #include <string>
+                #include <vector>
+                #include <algorithm>
+                #include <fstream>
+                
+                using namespace std;
+                
+                struct SinhVien {
+                    string Fullnamel;
+                    int age;
+                    string MaSoSinhVien;
+                    string ClassRoom;
+                    float KiThuatLapTrinh;
+                    float ThucHanhKiThuatLapTrinh;
+                    float ToanCaoCap;
+                    float ThietKeWeb;
+                    float ThucHanhThietKeWeb;
+                    float GiaoDucTheChat;
+                    float PhuongPhapNghienCuuKhoaHoc;
+                    string XepHang;
+                    float DiemTrungBinh;
+                    float DiemTBtoanKhoa;
+                
+                };
+                
+                int main() {
+                    system("color 6");
+                    cout << "|------------------------------------------------|" << endl;
+                    cout << "|    MMMKdxXMMMXxoooodk0NMMMW0dkNMXxdKMWkoOWM    |" << endl;
+                    cout << "|    M        dkl       cd0XWM   ;:kWMM  ;:WM    |" << endl;
+                    cout << "|    Mll;  ;llkd. ,llc,...cKNl   'OMMK;   :NM    |" << endl;
+                    cout << "|    MMWo .kMMMx. dMMMNx.  cKl .. ;KNc .. :NM    |" << endl;
+                    cout << "|    MMWo .kMMMx..dWMMMK,  ,0l 'o, cl..o, :NM    |" << endl;
+                    cout << "|    MMWo .kMMMx. oWWN0c.  oXl 'Ox.  .o0; :NM    |" << endl;
+                    cout << "|    MMWo .kMMMx. .,,...,cxNWl '0Nl  :XX; :NM    |" << endl;
+                    cout << "|    MMMKdxXMMMXxoooodk0NMMMW0dkNMXxdKMWkoOWM    |" << endl;
+                    cout << "|------------------------------------------------|" << endl;
+                    cout << "|------------------------------------------------|" << endl;
+                    cout << "Quan li sinh vien - Nghanh Cong nghe thong tin D22" << endl;
+                    cout << "|------------------------------------------------|" << endl;
+                    int n;
+                    cout << "So luong sinh vien muon nhap ? : ";
+                    cin >> n;
+                    cin.ignore();
+                    SinhVien* danhsach = new SinhVien[n];
+                    vector<SinhVien> Product;
+                    for (int sym = 0; sym < n; sym++)
+                    {
+                        system("cls");
+                        cout << "STT: " << sym + 1 << endl;
+                        SinhVien sv;
+                        cout << "- Nhap Ho Ten: ";
+                        getline(cin, sv.Fullnamel);
+                        if (sv.Fullnamel < "a" || sv.Fullnamel > "z")
+                        {
+                            if (sv.Fullnamel < "A" || sv.Fullnamel > "Z") {
+                                cout << "Saicuphap!";
+                                exit(0);
+                            }
+                        }
+                        cout << "- Nhap Tuoi: ";
+                        cin >> sv.age;
+                        cin.ignore();
+                        cout << "- Nhap Ma So Sinh Vien: ";
+                        getline(cin, sv.MaSoSinhVien);
+                        cout << "- Nhap Lop Hoc: ";
+                        getline(cin, sv.ClassRoom);
+                        cout << "- Nhap Diem Ki Thuat Lap Trinh: ";
+                        cin >> sv.KiThuatLapTrinh;
+                        cout << "- Nhap Diem Thuc Hanh Ki Thuat Lap Trinh: ";
+                        cin >> sv.ThucHanhKiThuatLapTrinh;
+                        cout << "- Nhap Diem Toan Cao Cap: ";
+                        cin >> sv.ToanCaoCap;
+                        cout << "- Nhap Diem Thiet Ke Web: ";
+                        cin >> sv.ThietKeWeb;
+                        cout << "- Nhap Diem Thuc Hanh Thiet Ke Web: ";
+                        cin >> sv.ThucHanhThietKeWeb;
+                        cout << "- Nhap Diem Giao Duc The Chat: ";
+                        cin >> sv.GiaoDucTheChat;
+                        cout << "- Nhap Diem Phuong Phap Ngien Cuu Khoa Hoc: ";
+                        cin >> sv.PhuongPhapNghienCuuKhoaHoc;
+                        cin.ignore();
+                        Product.push_back(sv);
+                        // Điểm Trung Bình 
+                        danhsach[sym].DiemTrungBinh = (sv.KiThuatLapTrinh + sv.ThucHanhKiThuatLapTrinh + sv.ToanCaoCap +
+                            sv.ThietKeWeb + sv.ThucHanhThietKeWeb + sv.GiaoDucTheChat +
+                            sv.PhuongPhapNghienCuuKhoaHoc) / 7;
+                
+                        danhsach[sym].DiemTBtoanKhoa += danhsach[sym].DiemTrungBinh / n;
+                
+                        if (danhsach[sym].DiemTrungBinh >= 9.0)
+                        {
+                            danhsach[sym].XepHang = "Danh Hieu Xuat Sac";
+                        }
+                        else if (danhsach[sym].DiemTrungBinh >= 8.0)
+                        {
+                            danhsach[sym].XepHang = "Dat Loai Gioi";
+                        }
+                        else if (danhsach[sym].DiemTrungBinh >= 6.5)
+                        {
+                            danhsach[sym].XepHang = "Dat Loai kha";
+                        }
+                        else if (danhsach[sym].DiemTrungBinh >= 5.0)
+                        {
+                            danhsach[sym].XepHang = "Hoc Luc Trung Binh";
+                        }
+                        else {
+                            danhsach[sym].XepHang = "Hoc Luc Kem !";
+                        }
+                    }
+                    cout << " << DANH SACH SINH VIEN >> " << endl;
+                    system("cls");
+                    for (int sym = 0; sym < Product.size(); sym++)
+                    {
+                        system("color 6");
+                        cout << endl;
+                        cout << "SINH VIEN STT: " << sym + 1 << endl;
+                        /*
+                    string Fullnamel;
+                    int age;
+                    string MaSoSinhVien;
+                    string ClassRoom;
+                    float KiThuatLapTrinh;
+                    float ThucHanhKiThuatLapTrinh;
+                    float ToanCaoCap;
+                    float ThietKeWeb;
+                    float ThucHanhThietKeWeb;
+                    float GiaoDucTheChat;
+                    float PhuongPhapNghienCuuKhoaHoc;
+                    string XepHang
+                    float DiemTrungBinh;
+                    float DiemTBtoanKhoa*/
+                        cout << "|--------------------------------------------------------------|" << endl;
+                        cout << ":Ten Sinh Vien ::::::::::| " << Product[sym].Fullnamel;
+                        cout << "\n|--------------------------------------------------------------|" << endl;
+                        cout << ":Tuoi Sinh Vien :::::::::| " << Product[sym].age;
+                        cout << "\n|--------------------------------------------------------------|" << endl;
+                        cout << ":Ma So Sinh Vien:::::::::| " << Product[sym].MaSoSinhVien;
+                        cout << "\n|--------------------------------------------------------------|" << endl;
+                        cout << ":Lop Sinh Vien:::::::::::| " << Product[sym].ClassRoom;
+                        cout << "\n|--------------------------------------------------------------|" << endl;
+                        cout << ":Diem Ki Thuat Lap Trinh:| " << Product[sym].KiThuatLapTrinh;
+                        cout << "\n|--------------------------------------------------------------|" << endl;
+                        cout << ":Diem Thuc Hanh KTLT ::::| " << Product[sym].ThucHanhKiThuatLapTrinh;
+                        cout << "\n|--------------------------------------------------------------|" << endl;
+                        cout << ":Diem Toan Cao Cap A1 :::| " << Product[sym].ToanCaoCap;
+                        cout << "\n|--------------------------------------------------------------|" << endl;
+                        cout << ":Dien Thiet Ke Web ::::::| " << Product[sym].ThietKeWeb;
+                        cout << "\n|--------------------------------------------------------------|" << endl;
+                        cout << ":Diem Thuc Hanh TKW :::::| " << Product[sym].ThucHanhThietKeWeb;
+                        cout << "\n|--------------------------------------------------------------|" << endl;
+                        cout << ":Diem Giao Duc The Chat::| " << Product[sym].GiaoDucTheChat;
+                        cout << "\n|--------------------------------------------------------------|" << endl;
+                        cout << ":Diem Phuong Phap NCKH:::| " << Product[sym].PhuongPhapNghienCuuKhoaHoc;;
+                        cout << "\n|--------------------------------------------------------------|" << endl;
+                        cout << ":Diem Trung Binh Cua SV::| " << danhsach[sym].DiemTrungBinh;
+                        cout << "\n|--------------------------------------------------------------|" << endl;
+                        cout << ":Thu BXep Hang Sinh Vien:| " << danhsach[sym].XepHang;
+                        cout << "\n|--------------------------------------------------------------|" << endl;
+                    }
+            
+                    float SumTrungBinhCuaToanKhoi = 0.0;
+                    for (int i = 0; i < n; i++)
+                    {
+                        SumTrungBinhCuaToanKhoi += danhsach[i].DiemTrungBinh;
+                    }
+                    float DiemTongCaKhoi = SumTrungBinhCuaToanKhoi / n;
+                
+                    // Lưu Thông Tin
+                    ofstream openfile("Folder.txt");
+                    if (openfile.is_open())
+                    {
+                        for (int i = 0; i < Product.size(); i++)
+                        {
+                            openfile << Product[i].Fullnamel << "   " << Product[i].age << "   " << Product[i].MaSoSinhVien << "   " << Product[i].ClassRoom
+                                << Product[i].KiThuatLapTrinh << "   " << Product[i].ThucHanhKiThuatLapTrinh << "   " << Product[i].ToanCaoCap <<
+                                Product[i].ThietKeWeb << "   " << Product[i].ThucHanhThietKeWeb << "   " << Product[i].GiaoDucTheChat << "   "
+                                << Product[i].PhuongPhapNghienCuuKhoaHoc << "   " << danhsach[i].DiemTrungBinh << "   " << danhsach[i].XepHang << endl;
+                        }
+                        openfile << DiemTongCaKhoi << endl;
+                    }
+                    openfile.close();
+                    cout << endl << endl << "Diem Trung Binh Cua Toan Bo Khoa CNTT La: " << DiemTongCaKhoi << endl;
+                    system("pause");
+                    return 0;
+                }
+                
+                    </textarea>
+                    <textarea>
+    // <!-- KIỂM TRA TÊN CÓ XUẤT HIỆN C++ -->
+            
+                #include <iostream>
+                #include <string>
+                #include <vector>
+                using namespace std;
+                    
+                struct HoGiaDinh {
+                string TenChuHo;
+                int SoLuongThanhVien;
+                int TongThuNhap;
+                };
+                    
+                    int main() {
+                        int n;
+                        cin >> n;
+                        HoGiaDinh* ds = new HoGiaDinh[n];
+                        for (int i = 0; i < n; i++) {
+                            string Ten;
+                            int SLTV, TTN;
+                            cin.ignore();
+                            getline(cin, Ten);
+                            cin >> SLTV >> TTN;
+                            ds[i] = { Ten, SLTV, TTN };
+                        }
+                        string word;
+                        cin.ignore();
+                        getline(cin, word);
+                        bool Dung = false;
+                        for (int i = 0; i < n; i++)
+                        {
+                            if (ds[i].TenChuHo.find(word) != string::npos)
+                            {
+                                cout << ds[i].TenChuHo << " " << ds[i].SoLuongThanhVien << endl;
+                                Dung = true;
+                            }
+                        }
+                        if (!Dung)
+                        {
+                            cout << "Not found" << endl;
+                        }
+                        return 0;
+                    }
+                    </textarea>
+                    <textarea>
+    // <!-- //TIC TOC TOE C++ -->
+            
+                #include <iostream>
+                #include <array>
+                #include <string>
+                
+                using namespace std;
+                
+                string ticTacToe(array<array<char, 3>, 3> board) {
+                
+                for (int i = 0; i < 3; i++) {
+                    if (board[i][0] == board[i][1] && board[i][1] == board[i][2])
+                    return (board[i][0] == 'X' ? "Player 1 wins" : "Player 2 wins");
+                        if (board[0][i] == board[1][i] && board[1][i] == board[2][i])
+                            return (board[0][i] == 'X' ? "Player 1 wins" : "Player 2 wins");
+                    }
+                
+                    if (board[0][0] == board[1][1] && board[1][1] == board[2][2])
+                        return (board[1][1] == 'X' ? "Player 1 wins" : "Player 2 wins");
+                    if (board[2][0] == board[1][1] && board[1][1] == board[0][2])
+                        return (board[1][1] == 'X' ? "Player 1 wins" : "Player 2 wins");
+                
+                    return "It's a Tie";
+                }
+                
+                int main() {
+                    array<array<char, 3>, 3> board;
+                    for (int i = 0; i < 3; i++) {
+                        for (int j = 0; j < 3; j++) {
+                            cin >> board[i][j];
+                        }
+                    }
+                    cout << ticTacToe(board) << endl;
+                    return 0;
+                }
+                
+                    </textarea>
+                    <textarea>
+        // <!-- IN XUỐNG DÒNG C++ -->
+            
+                #include <iostream>
+                #include <string>
+                #include <sstream>
+                using namespace std;
+                int main()
+                {
+                string sym1;
+                getline(cin, sym1);
+                stringstream ss(sym1);
+                string word;
+                    if (sym1.empty())
+                        {
+                            cout << "empty" << endl;
+                        }
+                        while (ss >> word) {
+                            cout << word << endl;
+                        }
+                        return 0;
+                    }
+                    </textarea>
+                    <textarea>
+    // <!-- ĐẾM SỐ TỪ XUẤT HIỆN -->
+            
+                #include <iostream>
+                #include <string>
+                #include <sstream>
+                #include <map>
+                #include <vector>
+                using namespace std;
+                int main() {
+                string str;
+                getline(cin, str);
+                
+                map<string, int> word_count;
+                vector<string> word_order;
+                stringstream ss(str);
+                string word;
+                
+                    while (ss >> word) {
+                    if (word_count.find(word) == word_count.end()) {
+                        word_order.push_back(word);
+                        }
+                        word_count[word]++;
+                    }
+                
+                    for (const auto& word : word_order) {
+                        cout << word << " " << word_count[word] << endl;
+                    }
+                
+                    return 0;
+                }
+                
+                    </textarea>
+            
+                    <textarea>
+    //  <!-- // QUẢN LÍ SINH VIÊN C++ -->
+            
+                #include <iostream>
+                #include <windows.h>
+                #include <math.h>
+                #include <cctype>
+                #include <string>
+                #include <cstdlib>
+                #include <fstream>
+                using namespace std;
+                
+                class GetfomationSchool {
+                protected:
+                    string Fullname;
+                    int Ages;
+                    string Nghenghiep;
+                    string Tencha;
+                    string Tenme;
+                    int SoluongThanhvienGD;
+                    string Quequan;
+                    char Tamchu[40];
+                    float DiemToan;
+                    float DiemLi;
+                    float DiemHoa;
+                    
+                    public:
+                        GetfomationSchool()
+                        {
+                            this->Fullname = "";
+                            this->Ages = 0;
+                            this->Nghenghiep = "";
+                            this->Tencha = "";
+                            this->Tenme = "";
+                            this->SoluongThanhvienGD = 0;
+                            this->Quequan = "";
+                            this->Tamchu;
+                            this->DiemToan, DiemHoa, DiemLi = 0;
+                    
+                        }
+                        ~GetfomationSchool()
+                        {
+                            this->Fullname = "";
+                            this->Ages = 0;
+                            this->Nghenghiep = "";
+                            this->Tencha = "";
+                            this->Tenme = "";
+                            this->SoluongThanhvienGD = 0;
+                            this->Quequan = "";
+                            this->Tamchu;
+                            this->DiemToan, DiemHoa, DiemLi = 0;
+                    
+                        }
+                        void DulieuDauVao(string Fullname, int Ages, string Nghenghiep, string Tencha, string Tenme, int SoluongThanhvienGD, string Quequan, char Tamchu, float DiemToan, float DiemLi, float DiemHoa)
+                        {
+                            this->Fullname = Fullname;
+                            this->Ages = Ages;
+                            this->Nghenghiep = Nghenghiep;
+                            this->Tencha = Tencha;
+                            this->Tenme = Tenme;
+                            this->SoluongThanhvienGD = SoluongThanhvienGD;
+                            this->Quequan = Quequan;
+                            this->DiemToan = DiemToan;
+                            this->DiemLi = DiemLi;
+                            this->DiemHoa = DiemHoa;
+                        }
+                        void SetInfomation()
+                        {
+                    
+                            std::ofstream file("Dulieu.txt");
+                            if (file.is_open()) {
+                    
+                                cout << "Ho ten cua ban la?(Fullname): ";
+                                cin.ignore();
+                                cout << endl;
+                                fflush(stdin);
+                                getline(cin, this->Fullname);
+                    
+                    
+                                cout << "Tuoi cua ban? (Ages): ";
+                                cin.ignore();
+                                cout << endl;
+                                cin >> this->Ages;
+                                cin.ignore();
+                                cout << "Nghe nghiep cua ban? (Jobs): ";
+                                cout << endl; fflush(stdin);
+                                getline(cin, this->Nghenghiep);
+                    
+                                cout << "Ten Bo cua ban? (Dad): ";
+                                cout << endl; fflush(stdin);
+                                getline(cin, this->Tencha);
+                    
+                                cout << "Ten Me cua ban? (Mom): ";
+                                cout << endl; fflush(stdin);
+                                getline(cin, this->Tenme);
+                    
+                                cout << "So Luong Thanh vien Gia Dinh Bro? (Quantity): ";
+                                cout << endl;
+                                cin >> this->SoluongThanhvienGD;
+                                cin.ignore();
+                                cout << "Que huong cua ban? (Home town): ";
+                                cout << endl; fflush(stdin);
+                                getline(cin, this->Quequan);
+                    
+                                cout << "Noi dang sinh song? (lives in): ";
+                                cout << endl;
+                                cin.get(this->Tamchu, 39);
+                    
+                                cout << "Diem Toan? (Math): ";
+                                cout << endl;
+                                cin >> this->DiemToan;
+                    
+                                cout << "Diem Li? (Physical): ";
+                                cout << endl;
+                                cin >> this->DiemLi;
+                    
+                                cout << "Diem Hoa? (Chemistry): ";
+                                cout << endl;
+                                cin >> this->DiemHoa;
+                                file << this->Fullname << " " << this->Ages << " " << this->Nghenghiep << " " << this->Tencha << " " << this->Tenme << " " << this->SoluongThanhvienGD << " " << this->Quequan << " " << this->Tamchu << " " << this->DiemToan << " " << this->DiemLi << " " << this->DiemHoa;
+                                file.close();
+                            }
+                        }
+                        void DiemTrungBinh(float DiemToan, float DiemLi, float DiemHoa)
+                        {
+                            cout << "Diem Trung Binh 3 Mon La:| ";
+                            cout << (DiemToan + DiemHoa + DiemLi) / 3;
+                            cout << endl;
+                            cout << "..........";
+                        }
+                        void OutInfomation()
+                        {
+                    
+                            system("color 4");
+                            cout << "|------------------------------------------|" << endl;
+                            cout << ":Ten ban vua nhap la:::::| " << this->Fullname;
+                            cout << "\n|------------------------------------------|" << endl;
+                            cout << ":Tuoi ban vua nhap la::::| " << this->Ages;
+                            cout << "\n|------------------------------------------|" << endl;
+                            cout << ":Nghe nghiep ban la::::::| " << this->Nghenghiep;
+                            cout << "\n|------------------------------------------|" << endl;
+                            cout << ":Ten cha ban la::::::::::| " << this->Tencha;
+                            cout << "\n|------------------------------------------|" << endl;
+                            cout << ":Ten cha ban la::::::::::| " << this->Tenme;
+                            cout << "\n|------------------------------------------|" << endl;
+                            cout << ":So luong thanh vien GD::| " << this->SoluongThanhvienGD;
+                            cout << "\n|------------------------------------------|" << endl;
+                            cout << ":Que quan ban la:::::::::| " << this->Quequan;
+                            cout << "\n|------------------------------------------|" << endl;
+                            cout << ":Noi tam chu:::::::::::::| " << this->Tamchu;
+                            cout << "\n|------------------------------------------|" << endl;
+                            DiemTrungBinh(DiemToan, DiemLi, DiemHoa);
+                            cout << "\n|------------------------------------------|" << endl;
+                        }
+            // Ngày Nhập Thông Tin ?
+                    };
+                    
+                    int Day_in_Month(int Month, int Year)
+                    {
+                        switch (Month)
+                        {
+                        case 1:
+                        case 3:
+                        case 5:
+                        case 7:
+                        case 8:
+                        case 10:
+                        case 12:
+                        {
+                            return 31;
+                            break;
+                        }
+                        case 4:
+                        case 6:
+                        case 9:
+                        case 11:
+                        {
+                            return 30;
+                            break;
+                        }
+                        case 2:
+                        {
+                            return((Year % 400 == 0)
+                                || (Year % 4 == 0 && Year % 100 != 0)) ? 29 : 28;
+                            break;
+                        }
+                    
+                        default: return -1;
+                            break;
+                        }
+                    }
+                    
+                    // Hàm này sét là ngày thứ mấy trong năm !!
+                    
+                    int Day_in_Year(int Day, int Month, int Year)
+                    {
+                        int NTN = 0;
+                        for (int i = 1; i < Month; i++)
+                        {
+                            NTN += Day_in_Month(i, Year);
+                    
+                        }
+                        NTN += Day;
+                        return NTN;
+                    }
+                    // Hàm  Này Dùng Để Tính Toán Trả Về Ngày Trước Đó !!
+                    void Day_Before(int Day, int Month, int Year)
+                    {
+                        if (Day == 1)
+                        {
+                            if (Month == 1)
+                            {
+                                Day = 31;
+                                Month = 12;
+                                Year--;
+                            }
+                            else {
+                                Day = Day_in_Month(Month, Year);
+                                Month--;
+                            }
+                        }
+                        else {
+                            Day--;
+                        }
+                        cout << "Days Before (Ngay Truoc Do): " << Day << "/" << Month << "/" << Year;
+                        cout << endl;
+                    }
+                    
+                    void Day_Hientai(int Day, int Month, int Year)
+                    {
+                        cout << " Ngay Ban Vua Nhap la: " << Day << "/" << Month << "/" << Year;
+                    }
+                    // Hàm  Này Dùng Để Tính Toán Trả Về Ngày Sau Đó !!
+                    void Day_After(int Day, int Month, int Year)
+                    {
+                        int NCT = Day_in_Month(Month, Year);
+                        if (Day == NCT)
+                        {
+                            if (Day == 12)
+                            {
+                                Day = 1;
+                                Month = 1;
+                                Year++;
+                            }
+                            else
+                            {
+                                Day = 1;
+                                Month++;
+                            }
+                        }
+                        else
+                        {
+                            Day++;
+                        }
+                        cout << "Days Afters (Ngay Tiep Theo La): " << Day << "/" << Month << "/" << Year;
+                    
+                    }
+                    // Loading C++;
+                    
+                    void loading()
+                    {
+                        char Square = 177, Soild = 219;
+                        cout << "\n\t\t\t\t\t\tLoading......\n\n";
+                        cout << "\t\t\t\t\t\t";
+                        for (int i = 0; i < 26; i++)
+                        {
+                            cout << Soild;
+                            Sleep(150);
+                        }
+                        cout << "\nLoading Xong... !!!";
+                        Sleep(500);
+                        system("cls");
+                        system("color 7D");
+                    }
+                    
+                    // 
+                    int main()
+                    {
+                        GetfomationSchool ObProject;
+                        char Slider = 220, Srender = 223;
+                        int num;
+                        cout << Slider << Srender << Slider << Srender << Slider << Srender << Slider << Srender << Slider << Srender << Slider << Srender << Slider << Srender << "= ";
+                        cout << "So luong ?(Input Quantity): ";
+                        cin >> num;
+                        int sym1[100];
+                    
+                        system("cls");
+                        system("color 7F");
+                        string username = "root";
+                        string password = "admin";
+                        string usernameCL = "ROOT";
+                        string passwordCL = "ADMIN";
+                        string inputUsername;
+                        string inputPassword;
+                    
+                        cout << endl;
+                        cout << "##################################################" << endl;
+                        cout << "#                 LOGIN SYSTEM                   #" << endl;
+                        cout << "##################################################" << endl;
+                        cout << endl;
+                        cout << "Username: ";
+                        cin >> inputUsername;
+                        cout << "Password: ";
+                        cin >> inputPassword;
+                        cout << endl;
+                    
+                        if (inputUsername == username && inputPassword == password || inputUsername == usernameCL && inputPassword == passwordCL)
+                        {
+                            system("cls");
+                            system("color 7F");
+                            cout << "##################################################" << endl;
+                            cout << "#            LOGIN SUCCESSFUL!                  #" << endl;
+                            cout << "##################################################" << endl;
+                            cout << "Username: " << inputUsername << endl;
+                            cout << "Password: ";
+                    
+                            for (int i = 0; i < password.size(); i++)
+                            {
+                                cout << "*";
+                            }
+                    
+                        }
+                        else
+                        {
+                            system("color 7F");
+                            cout << "##################################################" << endl;
+                            cout << "#             LOGIN FAILED!                     #" << endl;
+                            cout << "##################################################" << endl;
+                            exit(0);
+                        }
+                        system("color 7F");
+                        system("color 7C");
+                    
+                        cin.ignore();
+                        loading();
+                    
+                        ObProject.DulieuDauVao("Nguyen Van A", 20, "Gamer", "Nguyen Van B", "Pham Thi C", 4, "Canada", 'Uc', 10, 10, 10);
+                    
+                        // NGÀY  THÁNG NĂM
+                        int Day, Month, Year;
+                        for (int i = 1; i <= num; ++i)
+                        {
+                            ObProject.SetInfomation();
+                        }
+                    
+                    
+                        do {
+                            cout << "Nhap vao: Date - Month - Year: ";
+                            cin >> Day >> Month >> Year;
+                        } while ((Day < 1 || Day > Day_in_Month(Month, Year)
+                            || (Month < 1 || Month > 12) || Year < 1));
+                        system("cls");
+                        ObProject.OutInfomation();
+                        cout << "Month(Thang): " << Month << " Have(Co): " << Day_in_Month(Month, Year) << " Days(Ngay)";
+                        cout << endl;
+                        cout << "It's Days(Ngay Hom Do La): " << Day_in_Year(Day, Month, Year);
+                        Day_Hientai(Day, Month, Year);
+                        cout << endl;
+                        Day_Before(Day, Month, Year);
+                    
+                        Day_After(Day, Month, Year);
+                        return 0;
+                    }
+                    </textarea>
+    </div>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <!-- FOOTER -->
+    <a href="#" id="Replaye">🔼</a>
+    <footer>
+        <div class="container">
+            <div class="left">- Chào mừng bạn đến với CYB - Cộng đồng chia sẻ kiến thức lập trình! Tại đây, chúng tôi cung cấp các bài viết hữu ích về lập trình, chia sẻ kiến thức, kinh nghiệm, hướng dẫn và các tài liệu hữu ích khác để giúp các lập trình viên cải thiện kỹ năng của mình và phát triển nghề nghiệp. Được thành lập từ năm 2020, chúng tôi luôn cố gắng cung cấp những kiến thức mới nhất và hữu ích nhất cho cộng đồng lập trình viên trên toàn thế giới.</div>
+            <div class="right">- Chúng tôi tin rằng chia sẻ kiến thức là cách tốt nhất để cùng nhau phát triển và tiến bộ trong nghề lập trình. Vì vậy, CYB luôn đề cao giá trị của việc chia sẻ kiến thức, tạo ra một cộng đồng lập trình viên đoàn kết, tương tác và hỗ trợ nhau trong quá trình học tập và làm việc. Chúng tôi khuyến khích mọi người tham gia cộng đồng và chia sẻ kiến thức của mình với những người khác.</div>
+            <a href="https://github.com/Ducpham176" class="github"></a> 
+            <a href="https://www.facebook.com/ducpham.66" class="facebook"></a> 
+            <a href="https://www.tiktok.com/@z.z.z.z.zz.zz" class="tiktok"></a> 
+        </div>
+        <div class="containerEnd">Nếu bạn có bất kỳ câu hỏi, ý kiến đóng góp hoặc muốn chia sẻ kiến thức của mình, hãy liên hệ với chúng tôi qua email:  ㅤ<a href="mailto:ducpham2004nha@gmail.com" style="color: #eeeeee;"> ducpham2004nha@gmail.com</a>.</p></div>
+    </footer>
+    <script src="main.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+    if(window.scrollY > 1)
+    {
+        document.getElementById('Replaye').style.display = 'block';
+    }
+    else {
+        document.getElementById('Replaye').style.display = '';
+    }
+})
+document.getElementById('Sharecode').addEventListener('click', () => {
+            window.location.href = 'AllSharecode.html';
+        })
+        window.addEventListener('scroll', () => {
+    if(window.scrollY > 1)
+    {
+        document.getElementById('Replaye').style.display = 'block';
+    }
+    else {
+        document.getElementById('Replaye').style.display = '';
+    }
+})
+document.getElementById('home').addEventListener('click', () => {
+    window.location.href = 'index.html';
+})
+document.getElementById('CsltC').addEventListener('click', () => {
+    window.location.href = 'CsltC.html';
+})
+document.getElementById('KtltC').addEventListener('click', () => {
+    window.location.href = 'KtltC.html';
+});
+document.getElementById('easyGit').addEventListener('click', () => {
+    window.location.href = 'Git.html';
+})
+document.getElementById('contactMy').addEventListener('click', () => {
+    window.location.href = 'contact.html';
+})
+document.getElementById('createGit').addEventListener('click', () => {
+    window.location.href = 'Taolinkweb.html'
+})
+document.getElementById('cssTrick').addEventListener('click', () => {
+    window.location.href ='csshtml.html'
+})
+document.getElementById('htmlTrick').addEventListener('click', () => {
+    window.location.href = 'htmlcss.html';
+})
+document.getElementById('jsCode').addEventListener('click', () => {
+    window.location.href = 'jscode.html';
+})
+
+    </script>
+</body>
+</html>
